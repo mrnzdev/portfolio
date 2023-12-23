@@ -1,0 +1,14 @@
+body{
+ background-color: black;
+ font-family: 'Inter', sans-serif;
+}
+
+h1, p{
+ color: white;
+}
+
+header{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
