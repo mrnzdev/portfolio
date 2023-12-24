@@ -1,7 +1,9 @@
+import Header from '@/components/header';
+
 export default function Home() {
-  return (
-    <main>
-      mrnz
-    </main>
-  )
+	return (
+		<div className='flex min-h-screen flex-col py-8'>
+			<Header />
+		</div>
+	);
 }
