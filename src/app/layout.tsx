@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.className} min-h-screen bg-background font-sans text-[0.9rem]`}>
+			<body className={`${inter.className} min-h-dvh bg-background font-sans text-[0.9rem]`}>
 				<ThemeProvider
 					attribute='class'
 					defaultTheme='system'
