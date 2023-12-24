@@ -9,7 +9,7 @@ export default function Header() {
 					className='flex items-center space-x-2'
 					href='/'>
 					<div className='flex flex-col space-y-1 text-sm leading-none'>
-						<span className='text-lg font-bold'>mrnz</span>
+						<h1 className='text-lg font-bold'>mrnz</h1>
 					</div>
 				</a>
 				<div className='flex items-center space-x-2'>
