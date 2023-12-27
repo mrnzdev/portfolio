@@ -14,26 +14,6 @@ export default function Header() {
 				</a>
 				<div className='flex items-center space-x-2'>
 					<a
-						href='https://twitter.com/mrnzdev'
-						target='_blank'
-						rel='noreferrer'
-						className='text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background hover:bg-accent hover:text-accent-foreground rounded-md flex h-7 w-7 items-center justify-center p-0'>
-						<svg
-							xmlns='http://www.w3.org/2000/svg'
-							width='24'
-							height='24'
-							viewBox='0 0 24 24'
-							fill='none'
-							stroke='currentColor'
-							stroke-width='2'
-							stroke-linecap='round'
-							stroke-linejoin='round'
-							className='h-4 w-4 fill-current'>
-							<path d='M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z'></path>
-						</svg>
-						<span className='sr-only'>@mrnzdev</span>
-					</a>
-					<a
 						href='https://github.com/mrnzdev'
 						target='_blank'
 						rel='noreferrer'
