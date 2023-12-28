@@ -10,14 +10,14 @@ export default function Projects() {
 						href='https://mrnz.dev'>
 						<div>
 							<span className='font-medium underline underline-offset-4 '>
-								Minimal Gmail
+								NeatlyMail
 							</span>
 							<span className='ml-2 rounded-lg px-2 py-0.5 font-mono text-xs no-underline bg-primary text-primary-foreground'>
 								In development
 							</span>
 						</div>
 						<span className='text-muted-foreground'>
-							Email service that allows you to use gmail, but with a minimal UI.
+							Email service with a simple and minimalist approach.
 						</span>
 					</a>
 				</li>
