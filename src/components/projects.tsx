@@ -10,7 +10,7 @@ export default function Projects() {
 						href='https://mrnz.dev'>
 						<div>
 							<span className='font-medium underline underline-offset-4 '>
-								NeatlyMail
+								Neat Mail
 							</span>
 							<span className='ml-2 rounded-lg px-2 py-0.5 font-mono text-xs no-underline bg-primary text-primary-foreground'>
 								In development
