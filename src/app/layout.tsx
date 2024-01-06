@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { GeistMono } from 'geist/font/mono';
+import { GeistMono } from 'geist/font/mono'
 import { ThemeProvider } from '@/components/theme-provider';
-
 
 export const metadata: Metadata = {
 	title: 'mrnz',
@@ -15,8 +14,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='en'>
-			<body className={`${GeistMono.className} min-h-dvh bg-background font-sans text-[0.9rem]`}>
+		<html className={`${GeistMono.className} lang='en'`}>
+			<body className='min-h-dvh bg-background  text-[0.9rem] '>
 				<ThemeProvider
 					attribute='class'
 					defaultTheme='system'
