@@ -7,7 +7,7 @@ export default function Projects() {
 				<li>
 					<a
 						className='flex flex-col space-y-1.5'
-						href='https://mrnz.dev'>
+						href='https://neatmail.xyz'>
 						<div>
 							<span className='font-medium underline underline-offset-4 '>
 								Neat Mail
