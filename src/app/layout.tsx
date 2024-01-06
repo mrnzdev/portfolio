@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
+import { GeistMono } from 'geist/font/mono';
 import { ThemeProvider } from '@/components/theme-provider';
 
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'mrnz',
@@ -17,7 +16,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.className} min-h-dvh bg-background font-sans text-[0.9rem]`}>
+			<body className={`${GeistMono.className} min-h-dvh bg-background font-sans text-[0.9rem]`}>
 				<ThemeProvider
 					attribute='class'
 					defaultTheme='system'
