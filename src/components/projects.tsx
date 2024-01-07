@@ -23,7 +23,7 @@ export default function Projects() {
 					<div className='flex flex-col space-y-1.5'>
 						<div>
 							<span className='font-medium underline underline-offset-4 '>
-								<a href="href='https://github.com/mrnzdev/neat-theme'">
+								<a href="https://github.com/mrnzdev/neat-theme">
 									Neat Mail
 								</a>
 							</span>
