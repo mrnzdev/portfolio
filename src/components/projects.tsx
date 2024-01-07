@@ -21,6 +21,23 @@ export default function Projects() {
 						</span>
 					</a>
 				</li>
+				<li>
+					<a
+						className='flex flex-col space-y-1.5'
+						href='https://github.com/mrnzdev/neat-theme'>
+						<div>
+							<span className='font-medium underline underline-offset-4 '>
+								Neat Theme
+							</span>
+							<span className='ml-2 rounded-lg px-2 py-0.5 font-mono text-xs no-underline bg-primary text-primary-foreground'>
+								In development
+							</span>
+						</div>
+						<span className='text-muted-foreground'>
+							Sleek black and white VSCode color theme.
+						</span>
+					</a>
+				</li>
 			</ul>
 		</main>
 	);
