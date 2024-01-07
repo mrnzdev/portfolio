@@ -24,7 +24,7 @@ export default function Projects() {
 						<div>
 							<span className='font-medium underline underline-offset-4 '>
 								<a href="https://github.com/mrnzdev/neat-theme">
-									Neat Mail
+									Neat Theme
 								</a>
 							</span>
 							<span className='ml-2 rounded-lg px-2 py-0.5 font-mono text-xs no-underline bg-primary text-primary-foreground'>
