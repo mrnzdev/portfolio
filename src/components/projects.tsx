@@ -1,4 +1,3 @@
-import React from 'react';
 
 export default function Projects() {
 	return (
@@ -28,7 +27,7 @@ export default function Projects() {
 								</a>
 							</span>
 							<span className='ml-2 rounded-lg px-2 py-0.5 font-mono text-xs no-underline bg-primary text-primary-foreground'>
-								In development
+								v0.0.2
 							</span>
 						</div>
 						<span className='text-muted-foreground'>
