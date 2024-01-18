@@ -31,7 +31,7 @@ export default function Projects() {
 							</span>
 						</div>
 						<span className='text-muted-foreground'>
-							Sleek black and white VSCode color theme.
+							Sleek black VSCode color theme.
 						</span>
 					</div>
 				</li>
