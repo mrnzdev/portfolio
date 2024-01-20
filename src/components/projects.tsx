@@ -14,7 +14,7 @@ export default function Projects() {
 							</span>
 						</div>
 						<span className='text-muted-foreground'>
-							Email service with a simple and minimalist approach.
+							Gmail service with a simple and minimalist approach.
 						</span>
 					</div>
 				</li>
