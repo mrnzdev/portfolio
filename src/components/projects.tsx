@@ -5,16 +5,10 @@ const Projects = () => {
 		<main className="container">
 			<ul className="space-y-4 py-4">
 				<ProjectItem
-					url="https://neatmail.xyz"
-					title="Neat Mail"
+					title="Mane Studio"
+					url="https://mane.studio"
 					status="In development"
-					description="Gmail service with a simple and minimalist approach."
-				/>
-				<ProjectItem
-					url="https://marketplace.visualstudio.com/items?itemName=mrnzdev.neat-theme"
-					title="Neat Theme"
-					status="v0.1.2"
-					description="Sleek black VSCode color theme."
+					description="Building my own digital agency that specializes in web development and design."
 				/>
 			</ul>
 		</main>
