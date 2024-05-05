@@ -14,11 +14,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html
-			lang="en"
-			className={`${GeistMono.className}`}
-		>
-			<body className="min-h-dvh bg-background  text-[0.9rem] ">
+		<html lang="en" className={`${GeistMono.className}`}>
+			<body className="min-h-dvh bg-background text-[0.9rem]">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
