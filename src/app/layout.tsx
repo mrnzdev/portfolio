@@ -1,30 +1,37 @@
-import { ThemeProvider } from "@/components/theme-provider";
-import { GeistMono } from "geist/font/mono";
-import type { Metadata } from "next";
-import "@/app/globals.css";
+import "@/app/globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { GeistMono } from "geist/font/mono"
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
 	title: "mrnz",
-	description: "Software Developer",
-};
+	description: "Software Developer"
+}
 
 export default function RootLayout({
-	children,
+	children
 }: {
-	children: React.ReactNode;
+	children: React.ReactNode
 }) {
 	return (
-		<html lang="en" className={`${GeistMono.className}`}>
-			<body className="min-h-dvh bg-background text-[0.9rem]">
+		<html
+			lang='en'
+			className={`${GeistMono.className}`}
+		>
+			<body className='min-h-dvh bg-background text-[0.9rem]'>
 				<ThemeProvider
-					attribute="class"
-					defaultTheme="system"
+					attribute='class'
+					defaultTheme='system'
 					enableSystem
 					disableTransitionOnChange
 				>
 					{children}
+					<Analytics />
+					<SpeedInsights />
 				</ThemeProvider>
 			</body>
 		</html>
-	);
+	)
 }
