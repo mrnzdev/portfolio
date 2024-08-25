@@ -3,7 +3,7 @@ import GithubIcon from "@/components/GithubIcon"
 export default function Home() {
 	return (
 		<header className="container mx-auto">
-			<div className="flex justify-between items-center">
+			<div className="flex items-center justify-between">
 				<h1 className="text-base font-medium">mrtnz</h1>
 				<a
 					href="https://github.com/mrnzdev"
