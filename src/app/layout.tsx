@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
-import { Montserrat } from "next/font/google"
+import { JetBrains_Mono } from "next/font/google"
 import "./globals.css"
 
-const montserrat = Montserrat({ subsets: ["latin"], weight: "500" })
+const JetBrains = JetBrains_Mono({ subsets: ["latin"], weight: "400" })
 
 export const metadata: Metadata = {
 	title: "mrtnz",
@@ -19,9 +19,7 @@ export default function RootLayout({
 			lang="en"
 			className="bg-black text-white"
 		>
-			<body className={`${montserrat.className} min-h-dvh p-8`}>
-				{children}
-			</body>
+			<body className={`${JetBrains.className} min-h-dvh p-8`}>{children}</body>
 		</html>
 	)
 }
