@@ -1,19 +1,22 @@
-import GithubIcon from "@/components/GithubIcon"
+import Header from "@/components/Header"
+import ProjectItem from "@/components/ProjectItem"
 
 export default function Home() {
 	return (
-		<header className="container mx-auto">
-			<div className="flex items-center justify-between">
-				<h1 className="text-base font-medium">mrtnz</h1>
-				<a
-					href="https://github.com/mrnzdev"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="cursor-pointer rounded-md p-2 hover:bg-[#27272a]"
-				>
-					<GithubIcon />
-				</a>
-			</div>
-		</header>
+		<>
+			<Header />
+			<main className="container mx-auto flex flex-col gap-8 pt-16">
+				<ProjectItem
+					url="https://infopaseos.com"
+					title="info-paseos"
+					description="web platform that allows users to see all the tours that take place in Uruguay."
+				/>
+				<ProjectItem
+					url="https://journey.mrnz.dev"
+					title="journey"
+					description="website where you can take a look at the amount of weeks that you have been alive."
+				/>
+			</main>
+		</>
 	)
 }
