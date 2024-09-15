@@ -12,7 +12,7 @@ export default function Home() {
 					description="web platform that allows users to see all the tours that take place in Uruguay."
 				/>
 				<ProjectItem
-					url="https://journey.mrnz.dev"
+					url="https://journey.mrtnz.dev"
 					title="journey"
 					description="website where you can take a look at the amount of weeks that you have been alive."
 				/>
