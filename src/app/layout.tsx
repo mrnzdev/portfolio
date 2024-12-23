@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
-import { JetBrains_Mono } from "next/font/google"
+import { Geist_Mono } from "next/font/google"
 import "./globals.css"
 
-const JetBrains = JetBrains_Mono({ subsets: ["latin"], weight: "400" })
+const JetBrains = Geist_Mono({ subsets: ["latin"], weight: "400" })
 
 export const metadata: Metadata = {
 	title: "mrtnz",
