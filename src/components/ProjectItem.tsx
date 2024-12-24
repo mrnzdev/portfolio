@@ -11,11 +11,12 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 }) => {
 	return (
 		<div className="flex flex-col gap-2">
-			<h3 className="text-sm text-white hover:underline underline-offset-4">
+			<h3 className="text-sm">
 				<a
 					href={url}
 					target="_blank"
 					rel="noopener noreferrer"
+					className="underline-offset-4 hover:underline"
 				>
 					{title}
 				</a>

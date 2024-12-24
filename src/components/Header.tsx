@@ -12,7 +12,7 @@ const Header = () => {
 					href="https://github.com/mrnzdev"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="cursor-pointer rounded-md p-2 hover:bg-[#27272a]"
+					className="cursor-pointer rounded-md p-2 hover:bg-zinc-800"
 				>
 					<GithubIcon />
 				</a>
