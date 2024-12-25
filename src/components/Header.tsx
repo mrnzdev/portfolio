@@ -1,5 +1,5 @@
 import Link from "next/link"
-import GithubIcon from "./GithubIcon"
+import GithubIcon from "@/components/github-icon"
 
 const Header = () => {
 	return (

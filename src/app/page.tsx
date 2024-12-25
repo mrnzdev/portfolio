@@ -1,5 +1,5 @@
-import Header from "@/components/Header"
-import ProjectItem from "@/components/ProjectItem"
+import Header from "@/components/header"
+import ProjectItem from "@/components/project-item"
 
 export default function Home() {
 	return (
@@ -10,11 +10,13 @@ export default function Home() {
 					url="https://infopaseos.com"
 					title="info-paseos"
 					description="web platform that allows users to see all the tours that take place in Uruguay."
+					technologies={["next.js", "react", "typescript", "tailwind css", "supabase"]}
 				/>
 				<ProjectItem
 					url="https://journey.mrtnz.dev"
 					title="journey"
 					description="website where you can take a look at the amount of weeks that you have been alive."
+					technologies={["next.js","react", "typescript", "tailwind css"]}
 				/>
 			</main>
 		</>
