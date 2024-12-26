@@ -1,7 +1,7 @@
 import Link from "next/link"
-import GithubIcon from "@/components/github-icon"
+import GithubIcon from "./github-icon"
 
-const Header = () => {
+export default function Header() {
 	return (
 		<header className="container mx-auto">
 			<div className="flex items-center justify-between">
@@ -20,4 +20,3 @@ const Header = () => {
 		</header>
 	)
 }
-export default Header
