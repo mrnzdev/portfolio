@@ -2,7 +2,7 @@ interface ProjectItemProps {
 	url: string
 	title: string
 	description: string
-	technologies: string[] // Add technologies array prop
+	technologies: string[]
 }
 
 const ProjectItem: React.FC<ProjectItemProps> = ({

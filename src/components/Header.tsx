@@ -1,5 +1,5 @@
+import GithubIcon from "@/components/github-icon"
 import Link from "next/link"
-import GithubIcon from "./github-icon"
 
 export default function Header() {
 	return (
