@@ -1,4 +1,4 @@
-import Header from "@/components/Header"
+import Header from "@/components/header"
 import ProjectItem from "@/components/project-item"
 
 export default function Home() {
