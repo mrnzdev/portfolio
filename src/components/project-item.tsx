@@ -13,7 +13,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 }) => {
 	return (
 		<div className="flex flex-col gap-2">
-			<h3 className="text-sm">
+			<h2 className="text-sm">
 				<a
 					href={url}
 					target="_blank"
@@ -22,7 +22,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 				>
 					{title}
 				</a>
-			</h3>
+			</h2>
 			<p className="text-sm text-zinc-400">{description}</p>
 			<div className="flex flex-wrap gap-2">
 				{technologies.map((tech, index) => (
