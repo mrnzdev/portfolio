@@ -1,3 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  :focus-visible {
+    @apply outline-none ring-[3px] ring-zinc-500/70 ring-offset-4 ring-offset-black transition-all duration-300;
+  }
+}
