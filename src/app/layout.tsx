@@ -1,12 +1,12 @@
 import type { Metadata } from "next"
-import { Geist_Mono } from "next/font/google"
+import { JetBrains_Mono } from "next/font/google"
 import "./globals.css"
 
-const geist = Geist_Mono({ subsets: ["latin"], weight: "400" })
+const jetBrains = JetBrains_Mono({ subsets: ["latin"], display: "block" })
 
 export const metadata: Metadata = {
 	title: "mrtnz",
-	description: "Frontend developer based in Uruguay.",
+	description: "Software Developer and Minimalist Enthusiast",
 }
 
 export default function RootLayout({
@@ -17,9 +17,13 @@ export default function RootLayout({
 	return (
 		<html
 			lang="en"
-			className="bg-black text-white"
+			className="bg-black"
 		>
-			<body className={`${geist.className} min-h-dvh p-8`}>{children}</body>
+			<body
+				className={`${jetBrains.className} flex min-h-dvh flex-col px-4 py-12 text-zinc-200 antialiased md:px-8 md:py-16`}
+			>
+				{children}
+			</body>
 		</html>
 	)
 }
