@@ -1,12 +1,24 @@
+import GithubIcon from "@/components/icons/github"
+
 export default function NotFoundPage() {
-  return (
-    <div className="grid h-[calc(100dvh-4rem)]  grid-cols-1 place-items-center">
-      <main className="text-center text-sm space-y-1">
-        <h1>404 - Page Not Found</h1>
-        <h2 className="text-zinc-400">
-          The page that you're looking for doesn't exist.
-        </h2>
-      </main>
-    </div>
-  )
+	return (
+		<main className="flex flex-1 items-center justify-center">
+			<div className="flex items-center gap-8">
+				<a
+					href="mailto:mrtnz@mrtnz.dev"
+					className="rounded-lg px-3 py-2 text-xs text-zinc-500 transition-all duration-300 hover:bg-zinc-900/50 hover:text-zinc-200 focus-visible:bg-zinc-900/50 focus-visible:text-zinc-200"
+				>
+					mrtnz [at] mrtnz.dev
+				</a>
+				<a
+					href="https://github.com/mrnzdev"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="rounded-lg p-2 text-zinc-500 transition-all duration-300 hover:bg-zinc-900/50 hover:text-zinc-200 focus-visible:bg-zinc-900/50 focus-visible:text-zinc-200"
+				>
+					<GithubIcon />
+				</a>
+			</div>
+		</main>
+	)
 }
