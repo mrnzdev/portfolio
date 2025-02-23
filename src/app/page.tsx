@@ -1,30 +1,24 @@
-import Header from "@/components/Header"
-import ProjectItem from "@/components/project-item"
+import GithubIcon from "@/components/icons/github"
 
 export default function Home() {
 	return (
-		<>
-			<Header />
-			<main className="container mx-auto flex flex-col gap-8 pt-16">
-				<ProjectItem
-					url="https://infopaseos.com"
-					title="info-paseos"
-					description="web platform that allows users to see all the tours that take place in Uruguay."
-					technologies={[
-						"next.js",
-						"react",
-						"typescript",
-						"tailwind css",
-						"supabase",
-					]}
-				/>
-				<ProjectItem
-					url="https://journey.mrtnz.dev"
-					title="journey"
-					description="website where you can take a look at the amount of weeks that you have been alive."
-					technologies={["next.js", "react", "typescript", "tailwind css"]}
-				/>
-			</main>
-		</>
+		<main className="flex flex-1 items-center justify-center">
+			<div className="flex items-center gap-8">
+				<a
+					href="mailto:mrtnz@mrtnz.dev"
+					className="rounded-lg px-3 py-2 text-xs text-zinc-500 transition-all duration-300 hover:bg-zinc-900/50 hover:text-zinc-200 focus-visible:bg-zinc-900/50 focus-visible:text-zinc-200"
+				>
+					mrtnz [at] mrtnz.dev
+				</a>
+				<a
+					href="https://github.com/mrnzdev"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="rounded-lg p-2 text-zinc-500 transition-all duration-300 hover:bg-zinc-900/50 hover:text-zinc-200 focus-visible:bg-zinc-900/50 focus-visible:text-zinc-200"
+				>
+					<GithubIcon />
+				</a>
+			</div>
+		</main>
 	)
 }
