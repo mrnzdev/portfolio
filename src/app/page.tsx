@@ -1,6 +1,5 @@
 import { type Project, ProjectCard } from "@/components/project-card";
 import { SectionWrapper } from "@/components/section-wrapper";
-import { SocialLinks } from "@/components/social-links";
 import { Badge } from "@/components/ui/badge";
 
 const projects: Project[] = [
@@ -18,7 +17,6 @@ const projects: Project[] = [
       "MySQL",
     ],
     url: "https://veltro.uy",
-
   },
   {
     title: "Cuanto Vamos",
@@ -68,7 +66,7 @@ export default function RootPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <SectionWrapper className="min-h-screen flex flex-col justify-center">
+      <SectionWrapper className="h-dvh flex flex-col justify-center">
         <div className="space-y-6">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             mrtnz
