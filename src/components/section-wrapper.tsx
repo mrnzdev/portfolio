@@ -15,12 +15,11 @@ export function SectionWrapper({
     <section
       id={id}
       className={cn(
-        "py-24 md:py-32 px-6 md:px-8 max-w-3xl mx-auto w-full",
-        className
+        "mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28",
+        className,
       )}
     >
       {children}
     </section>
   );
 }
-
