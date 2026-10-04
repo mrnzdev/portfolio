@@ -51,12 +51,12 @@ const rendered = await Promise.all(projects.map(async (p) => ({ ...p, Content: (
 					{(data.url || data.repo) && (
 						<p class="links">
 							{data.url && (
-								<a href={data.url} target="_blank" rel="noopener noreferrer">
+								<a href={data.url} target="_blank" rel="noopener">
 									Visit<span class="sr-only"> {data.title} (opens in a new tab)</span><span aria-hidden="true"> ↗</span>
 								</a>
 							)}
 							{data.repo && (
-								<a href={data.repo} target="_blank" rel="noopener noreferrer">
+								<a href={data.repo} target="_blank" rel="noopener">
 									Source<span class="sr-only"> code of {data.title} (opens in a new tab)</span><span aria-hidden="true"> ↗</span>
 								</a>
 							)}
