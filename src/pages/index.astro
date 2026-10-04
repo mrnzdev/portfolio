@@ -1,14 +1,13 @@
 ---
 import '@fontsource-variable/jetbrains-mono';
 import { getCollection, render } from 'astro:content';
-import { Image } from 'astro:assets';
 
 const name = 'Fermín Martínez';
 const role = 'Software artisan.';
 
-const projects = (await getCollection('projects', (p) => import.meta.env.DEV || !p.data.draft))
+const projects = (await getCollection('projects'))
 	.sort((a, b) => a.data.order - b.data.order);
-const description = `Software developer in Montevideo, Uruguay, building products end to end with a focus on the frontend. Selected work: ${new Intl.ListFormat('en').format(projects.map((p) => p.data.title))}.`;
+const description = `Software developer based in Montevideo, Uruguay, building products end to end with a focus on the frontend. Selected work: ${new Intl.ListFormat('en').format(projects.map((p) => p.data.title))}.`;
 const url = new URL('/', Astro.site);
 const image = new URL('/og.png', Astro.site);
 const rendered = await Promise.all(projects.map(async (p) => ({ ...p, Content: (await render(p)).Content })));
@@ -43,7 +42,6 @@ const rendered = await Promise.all(projects.map(async (p) => ({ ...p, Content: (
 		<main>
 			{rendered.map(({ data, Content }) => (
 				<article>
-					{data.cover && <Image src={data.cover} alt="" width={1200} />}
 					<div class="head">
 						<h2>{data.title}</h2>
 						<span class="meta status" data-status={data.status}>{data.status}</span>
@@ -143,7 +141,6 @@ const rendered = await Promise.all(projects.map(async (p) => ({ ...p, Content: (
 	@media (hover: hover) { a:hover { text-decoration-color: currentColor; } }
 	main { margin: min(3rlh, 10svh) 0 3rlh; flex: 1; align-content: start; display: grid; gap: 2.5rlh; }
 	article { display: grid; gap: 0.25rlh; }
-	article img { width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line); margin-bottom: 0.5rlh; }
 	.stack { list-style: none; padding: 0; margin: 0; }
 	.stack li { display: inline; white-space: nowrap; }
 	.stack li:not(:last-child)::after { content: '\a0· '; white-space: normal; }
