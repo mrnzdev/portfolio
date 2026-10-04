@@ -130,7 +130,7 @@ const rendered = await Promise.all(projects.map(async (p) => ({ ...p, Content: (
 	body {
 		max-width: 70ch; /* 66ch of text + 2ch padding per side */
 		margin: 0 auto;
-		padding: min(4rlh, 12svh) 2ch 1.5rlh; /* shrinks on short screens, e.g. landscape phones */
+		padding: 1.5rlh 2ch; /* same space above the header as below the footer */
 		min-height: 100svh;
 		box-sizing: border-box;
 		display: flex;
